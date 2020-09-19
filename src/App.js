@@ -1,23 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './Images/logo.png';
+import Fade from "react-awesome-reveal";
 import './App.css';
+import github from "./Images/github.png";
 
 function App() {
   return (
     <div className="App">
+        <Fade delay={1500}>
+            <a target="_blank" rel="noopener noreferrer" href={"https://github.com/SPSIgnite"}>
+            <img src={github} className="Github-logo" alt="github" />
+            </a>
+        </Fade>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <Fade cascade>
+            <img src={logo} className="App-logo" alt="logo" />
+		        <h1>Ignite</h1>
+                <h3>Spark Change</h3>
+          </Fade>
       </header>
     </div>
   );
