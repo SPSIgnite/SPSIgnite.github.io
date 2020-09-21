@@ -35,3 +35,14 @@ a {
   font-family: 'Raleway', sans-serif;
   color: white;
 }
+
+/* Makes the webpage static (no scrolling) */
+
+body {
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
